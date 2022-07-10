@@ -16,6 +16,7 @@
           <input id="nombre" type="text" [(ngModel)]="ProductoNuevo.Nom_prod">
         </div>
         <div class="casilla">
+          
           <label for="precio">Precio</label>
           <input id="precio" type="number" [(ngModel)]="ProductoNuevo.Precio">
         </div>
@@ -40,8 +41,8 @@
           <input type="number" [(ngModel)]="ProductoNuevo.Restaurante_idRestaurante">
         </div>
         <div class="casilla">
-          <label for="imagen">Imagen</label>
-          <input id="imagen" type="file" class="imagen" [(ngModel)]="ProductoNuevo.Imagen">
+          <label for="imagen">Imagen Url</label>
+          <input id="imagen" type="text" class="imagen" [(ngModel)]="ProductoNuevo.Imagen">
         </div>
       </div>
     </section>

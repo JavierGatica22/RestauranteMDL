@@ -9,16 +9,13 @@
   }
   
   .card {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px -4px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(37, 36, 34);
-    margin-bottom: 20px;
+    box-shadow: rgb(0, 0, 0) 0px 6px 10px -4px;
+    background-color: rgba(255, 255, 255, 0.962);
+    color: rgb(0, 0, 0);
     position: relative;
-    border-radius: 12px;
-    border-width: 0px;
     border-style: none;
     border-color: initial;
-    border-image: initial;
+  
     transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1) 0s, box-shadow 0.2s ease 0s;
   }
   
@@ -28,7 +25,7 @@
   
   .card .card-footer {
     background-color: transparent;
-    border-width: 0px;
+ 
     border-style: initial;
     border-color: initial;
     border-image: initial;
