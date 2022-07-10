@@ -1,0 +1,29 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Estado Finalizado</th>
+            <th>#</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let restaurante of lista">
+            <td>{{restaurante.idRestaurante}}</td>
+            <td>{{restaurante.Correo}}</td>
+            <td>{{restaurante.Telefono}}</td>
+            <td>{{restaurante.Direccion}}</td>
+            <td>{{restaurante.Imagen}}</td>
+            <td>{{restaurante.Nombre_Negocio}}</td>
+            <td>{{restaurante.Nombre_client}}</td>
+            <td>{{restaurante.Apellido_client}}</td>
+            <td>{{restaurante.Contrasena}}</td>
+            <td>{{restaurante.Tipo_empresa}}</td>
+            <td>
+                <button class="btn btn-danger" >Eliminar</button>
+                <button class="btn btn-warning" routerLinkActive="router-link-active" >Modificar</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>

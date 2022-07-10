@@ -1,0 +1,107 @@
+
+.col-lg-6{
+    border: 1px solid  rgb(235, 231, 231);
+    height: 250px;
+     
+}
+.col-lg-6 h3{
+    position: relative;
+    margin-top: 10px;
+    left: 10px;
+}
+.col-lg-6 p{
+    position: relative;
+    margin-top: 10px;
+    left: 10px;
+    color: #606060;
+}
+.col-lg-6 button{
+    position: relative;
+    left: 10px;
+    margin-top: 85px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    width: 110px;
+    color: black;
+   
+    
+}
+
+#primero{
+    margin-top: 60px;
+}
+
+#segundo{
+    margin-top: 20px;
+}
+#tercero{
+    margin-top: 20px;
+}
+#cuarto{
+    margin-top: 20px;
+}
+
+.carousel-inner{
+    min-height: 400px;
+    max-height: 650px;
+}
+
+
+.bordes{
+ 
+    border-radius: 2%;
+  }
+  
+  div a{
+    
+  
+    border-radius: 10px;
+    
+    
+  }
+    
+  hr{
+    margin-top: 0px;
+    color: rgb(231, 106, 4);
+  }
+  .letrina {
+      font-family: Garamond, serif;
+    }
+    
+    .sidenav {
+      height: 100vh;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 10px;
+      left: 0;
+      background-color: rgb(255, 255, 255);
+      overflow-x: hidden;
+      border-color: rgb(231, 106, 4);
+    }
+    
+    .sidenav a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #000000;
+      display: block;
+    }
+    
+    .sidenav a:hover {
+      color: rgb(231, 106, 4);
+    }
+    
+    .main {
+      margin-left: 160px; /* Same as the width of the sidenav */
+      font-size: 50px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+  

@@ -1,0 +1,196 @@
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.bgp{
+    background-color: rgb(230, 242, 237);
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.txt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ctt{
+    margin: auto;
+}
+
+.txt p{
+    font-size: 16px;
+    padding: 12px 0 6px 0;
+}
+
+.imgh{
+    display: flex;
+    justify-content: center;
+}
+
+.imgh img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.pr, .tr, .cr, .qr, .btnf{
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.fotocel{
+    display: flex;
+    justify-content: center;
+}
+
+.fotocel img{
+    width: 80%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.txpr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cpp{
+    margin: auto;
+}
+
+h2{
+    font-size: 38px;
+}
+
+.txpr p{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.sr{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.txsp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.csp{
+    margin: auto;
+}
+
+.txsp p{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.fotorec{
+    display: flex;
+    justify-content: center;
+}
+
+.fotorec img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.txtr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ctp{
+    margin: auto;
+}
+
+.txtr p{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.txcr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ccp{
+    margin: auto;
+}
+
+.txcr p{
+    padding-top: 15px;
+    padding-bottom: 8px;
+}
+
+.txqr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cqp{
+    margin: auto;
+}
+
+.txqr p{
+    padding: 2vh 0
+}
+
+.txqr a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.btncon{
+    background-color: var(--naranjo);
+    border: none;
+    border-radius: none;
+    color: white;
+    padding: 12px 25px;
+}
+
+.btncon:hover{
+    background-color: var(--naranjod);
+    transition: .5s;
+}
+
+.btnesg{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+.btnesg svg{
+    width: 40px;
+    height: 80px;
+    margin-top: -2%;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 36px;
+    text-align: start
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+}

@@ -1,0 +1,125 @@
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.row, .oc{
+    padding: 5% 0;
+}
+
+.destaca-foto{
+    display: flex;
+    justify-content: center;
+}
+
+.destaca-foto img{
+    width: 100%;
+}
+
+.destaca{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.destaca-contenido{
+    margin: auto;
+
+    h1{
+        padding-right: 10vw;
+    }
+    p{
+        font-size: 16px;
+        padding-right: 6vw;
+        margin: 5vh 0;
+    }
+}
+
+.btncomenzar{
+    background-color: var(--naranjo);
+    border: none;
+    border-radius: none;
+    color: white;
+    padding: 12px 25px;
+}
+
+.btncomenzar:hover{
+    background-color: var(--naranjod);
+    transition: .5s;
+}
+
+.beneficios{
+    h1{
+        margin-bottom: 5vh;
+    }
+    h5{
+        margin: 3vh 0;
+    }
+}
+
+.oc p{
+    margin-top: 3vh;
+    font-size: 17px;
+}
+
+.pasta-sister{
+    display: flex;
+    justify-content: center;
+    
+    .pasta-sister img{
+        width: 20vw;
+        height: 100vh;
+        object-fit: scale-down;
+    }
+}
+
+.cajas{
+    h5{
+        margin: 3vh 0;
+    }
+
+    .caja{
+        margin-bottom: 3vh;
+    }
+}
+
+.btnesg{
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.separador{
+    margin-bottom: 30px;
+}
+
+.btnesg svg{
+    width: 15%;
+    margin-top: -15px;
+    transition: .5s;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 38px;
+    width: 85%;
+    display: inline-block;
+    text-align: start;
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+
+    svg{
+        transform: translateX(20%)  
+    }
+}

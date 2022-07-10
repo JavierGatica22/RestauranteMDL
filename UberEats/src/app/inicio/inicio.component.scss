@@ -1,0 +1,35 @@
+
+.input1{
+    border-radius: 10vh;
+    background-color: rgba(105, 105, 105, 0.314);
+    border: none;
+    height: 40px;
+    width: 14%;
+    text-align: center;
+  }
+  
+  .card {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px -4px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(37, 36, 34);
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+    border-width: 0px;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1) 0s, box-shadow 0.2s ease 0s;
+  }
+  
+  .card-stats .card-footer {
+    padding: 0px 15px 15px;
+  }
+  
+  .card .card-footer {
+    background-color: transparent;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+  }

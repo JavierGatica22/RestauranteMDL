@@ -1,0 +1,44 @@
+<app-sidebar></app-sidebar>
+<br>
+<div class="container">
+<H1 >Menu de Productos</H1>
+<br>
+
+<button  class="btn btn-primary" routerLink="/agregarproducto" >Agregar Producto</button>
+</div>
+<br>
+
+<!-------->
+<br>
+<section class="container">
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let producto of lista">
+    <div class="card card-stats">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+            <img  [src]="producto.Imagen ? producto.Imagen: ''">
+            </div>
+          </div>
+          <div class="col-7 col-md-8" style="font-family:Arial, Helvetica, sans-serif ;">
+            <div class="numbers">
+              <p style="font-weight:bold ;" class="card-category">{{producto.Nom_prod}}</p>
+              <p class="card-title">Precio: ${{producto.Precio}}<p>
+              <p class="card-title">Stock: {{producto.Stock}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+        <hr>
+        <div class="stats">
+          <button class="btn btn-danger" (click)="EliminarProducto(producto.idProducto)">Elminar Producto</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+ 
+</div> 

@@ -1,0 +1,264 @@
+*{
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+  --naranjo: rgb(231, 106, 4);
+  --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.oc{
+  padding: 5% 0;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2.3rem;
+}
+
+h3{
+  font-size: 1.2rem;
+}
+
+.bg{
+  background: black;
+  padding-bottom: 80px;
+}
+
+.comenzar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.comenzar .texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 120px;
+  color: #fff;
+}
+
+.comenzar .texto h1{
+  margin-bottom: 40px;
+}
+
+.formulario{
+  background-color: #fff;
+  padding: 40px 30px 30px;
+}
+
+.formulario h2{
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.formulario .input-form, select{
+  background: #e9e9e9;
+  border: 0;
+  padding: 10px 15px;
+  margin: 4px 0;
+}
+
+.form-chek{
+  padding: 0;
+}
+
+.check{
+  cursor: pointer;
+}
+
+.formulario .nombre{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.formulario .pais{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0;
+  gap: 15px;
+}
+
+.formulario .notificaciones-wsp{
+  font-size: 12px;
+}
+
+.formulario .terminos{
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+.boton-enviar{
+  background-color: var(--naranjo);
+  height: 45px;
+  border: none;
+  border-radius: 0;
+}
+
+.casilla-nombre{
+  width: 48%;
+  margin-right: 2%;
+}
+
+.casilla-pais{
+  width: 14%;
+  margin-right: 2%;
+}
+
+.elegir{
+  h2{
+    margin-bottom: 4vh;
+  }
+
+  .caja{
+    margin-bottom: 2vh;
+  }
+}
+
+.funciona{
+  h2{
+    margin-bottom: 4vh;
+  }
+
+  .caja{
+    margin-bottom: 2vh;
+    
+    .foto{
+      display: flex;
+      justify-content: center;
+      }
+
+    h5{
+      margin: 2vh 0;
+    }
+  }
+}
+
+
+.destaca-foto{
+  display: flex;
+  justify-content: center;
+}
+
+.destaca{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bg2{
+  background-color: black;
+}
+
+.diana-foto{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.diana-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.diana{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.diana-contenido{
+  margin: auto;
+
+  h1{
+      padding-right: 10vw;
+  }
+  p{
+      font-size: 16px;
+      padding-right: 6vw;
+      margin: 5vh 0;
+  }
+}
+
+.pasos-foto{
+  display: flex;
+  justify-content: center;
+}
+
+.pasos-foto img{
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+.pasos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pasos-contenido{
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px){
+  .comenzar .texto{
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 1020px){
+  h1{
+    font-size: 2.1rem;
+  }
+  
+  h2{
+    font-size: 2rem;
+  }
+  
+  h3{
+    font-size: 1.2rem;
+  }
+
+  .formulario{
+    background: transparent;
+    padding: 0 15px;
+    margin: 0;
+    color: #fff;
+  }
+
+  .formulario h2{
+    padding-bottom: 1px;
+    padding: 0;
+    color: #fff;
+  }
+
+  .comenzar .texto{
+    padding: 0;
+  }
+
+  .comenzar .texto p{
+    margin-bottom: 50px;
+  }
+
+  .comenzar{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .formulario .texto{
+    margin-bottom: 60px;
+  }
+
+  .formulario .nombre{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}

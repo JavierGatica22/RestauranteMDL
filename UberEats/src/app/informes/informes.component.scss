@@ -1,0 +1,70 @@
+.container-fluid{
+    padding-left: 0%;
+  }
+  
+  .sidebar-container{
+    min-height: 100vh;
+  }
+  
+  .sidebar-container .menu{
+    width: 14rem;
+  }
+  
+  .menu a{
+    text-decoration: none;
+  }
+  
+  .content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+  
+  .input1{
+    border-radius: 10vh;
+    background-color: rgba(105, 105, 105, 0.314);
+    border: none;
+    height: 40px;
+    width: 14%;
+    text-align: center;
+  }
+        
+  /*Tabla*/
+  
+
+.cabecera{
+  height: 20px;
+  border-bottom: 1px solid rgb(216, 210, 210);
+}
+
+.table, tbody{
+  border-bottom: 1px solid rgb(216, 210, 210);
+}
+.table, tbody, tr{
+  height: 60px;
+}
+
+/*----------------Lado Izquierdo------------------*/
+
+
+
+
+
+/*----------------Lado Derecho------------------*/
+
+
+#botoninformes{
+    position: relative;
+    left: 445px;
+    margin-top: 30px;
+    height: 55%;
+    width: 180px;
+}
+
+
+.container{
+
+  margin-top: 20px;
+
+}
+

@@ -1,0 +1,20 @@
+<div class="inicio-sesion">
+  <img src="assets/yavoy2.png" alt="">
+
+  <div class="contenido">
+    <h2>Inicio de sesión</h2>
+    <p>Usa tu dirección de correo electrónico y tu contraseña para iniciar sesión en el Administrador de Ya Voy</p>
+    
+    <div>
+      <p>Nombre de usuario</p>
+      <input type="text" placeholder="Ingresa tu correo electrónico" [(ngModel)]="this.Correo">
+      <p>Contraseña</p>
+      <input type="password" placeholder="Ingresa tu contraseña" [(ngModel)]="this.Contrasena">
+    </div>
+    <button type="submit" (click)="IniciarSesion()" ><a style="text-decoration: none ;color: white;">Siguiente</a> </button>
+    <div class="google">
+      <p>O bien</p>
+      <a href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fauth.uber.com%3Fid%3Dauth373690&response_type=permission%20id_token&scope=email%20profile%20openid&openid.realm&include_granted_scopes=true&client_id=89939265457-enilmfbsacgcj2b7qq3sc7jc51u5b3ge.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fauth.uber.com&fetch_basic_profile=true&gsiwebsdk=2&flowName=GeneralOAuthFlow"><button type="submit" href="">Continuar con Google</button></a>
+    </div>
+  </div>
+</div>

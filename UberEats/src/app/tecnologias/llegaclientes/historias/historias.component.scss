@@ -1,0 +1,147 @@
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.row, .oc{
+    padding: 5% 0;
+}
+
+.historias-foto{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
+}
+
+.historias-foto img{
+    width: 100%;
+    object-fit: scale-down;
+}
+
+.historias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.historias-contenido{
+    margin: auto;
+    padding: 0 3vw 0 0;
+
+    p{
+        padding: 4vh 0 0 0;
+    }
+
+    .parrafo2{
+        padding: 0 0 2vh 0;
+    }
+}
+
+.anuncios{
+    h5{
+        font-size: 19px;
+        margin: 3vh 0;
+    }
+}
+
+.caja{
+    margin-bottom: 2vh;
+}
+
+.compartir-foto{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+    height: 100%;
+}
+
+.compartir-foto img{
+    width: 40%;
+    height: 40%;
+    object-fit: scale-down;
+}
+
+.compartir{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.compartir-contenido{
+    margin: auto;
+    padding: 0 3vw 0 0;
+
+    p{
+        padding: 4vh 0 0 0;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(155, 155, 155, 0.568);
+        transition: 1s;
+    }
+
+    a:hover{
+        border-bottom: 1px solid black;
+    }
+}
+
+.aquipf{
+    color: black;
+}
+
+.btncomenzar{
+    background-color: var(--naranjo);
+    border: none;
+    border-radius: none;
+    color: white;
+    padding: 12px 25px;
+}
+
+.btncomenzar:hover{
+    background-color: var(--naranjod);
+    transition: .5s;
+}
+
+.btnesg{
+    width: 100%;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.separador{
+    margin-bottom: 30px;
+}
+
+.btnesg svg{
+    width: 15%;
+    margin-top: -15px;
+    transition: .5s;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 38px;
+    width: 85%;
+    display: inline-block;
+    text-align: start;
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+
+    svg{
+        transform: translateX(20%)  
+    }
+}

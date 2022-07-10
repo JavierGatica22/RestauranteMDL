@@ -1,0 +1,97 @@
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.row, .btnf{
+    padding: 5% 0;
+}
+
+.resencon, .respondecon{
+    display: flex;
+    justify-content: center;
+}
+
+.resencon img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.contresen, .contresponde{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contresen h1{
+    font-size: 9vh;
+    text-align: start;
+}
+
+.contresen p{
+    font-size: 16px;
+    padding: 12px 0 6px 0;
+}
+
+.txtresen, .txtresponde{
+    margin: auto;
+}
+
+.respondecon img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.respondecon h1{
+    text-align: start;
+}
+
+.respondecon p{
+    font-size: 16px;
+    padding: 12px 0 6px 0;
+}
+
+.btnesg{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+.btnesg svg{
+    width: 40px;
+    height: 80px;
+    margin-top: -2%;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 36px;
+    text-align: start
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+}
+
+.btncomenzar{
+    background-color: var(--naranjo);
+    border: none;
+    border-radius: none;
+    color: white;
+    padding: 12px 25px;
+}
+
+.btncomenzar:hover{
+    background-color: var(--naranjod);
+    transition: .5s;
+}

@@ -1,0 +1,94 @@
+.container-fluid{
+    padding-left: 0%;
+  }
+  
+  .sidebar-container{
+    min-height: 100vh;
+  }
+  
+  .sidebar-container .menu{
+    width: 14rem;
+  }
+  
+  .menu a{
+    text-decoration: none;
+  }
+  
+  .content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+  }
+  
+  .btnd{
+    background-color: rgba(168, 168, 168, 0.349);
+    border-radius: 50px;
+  }
+        
+  
+  
+  /*----------------Lado Izquierdo------------------*/
+  
+  /*Titulo tiendas*/
+  #tituloTiendas{
+    font-size: 60px;
+    margin-top: 40px;
+    
+  
+  }
+  /*Boton Ordena*/
+  
+  #inputState{
+    border-radius: 50px;
+    background-color: rgba(168, 168, 168, 0.349);
+    width: 120px;
+    margin-top: 45px;
+    
+  }
+  
+  /*Titulo Conectados*/
+  
+  #tituloConectados{
+    
+    margin-top: 80px;
+    font-size:30px ;
+    
+    
+  }
+  
+  /*Tabla*/
+  
+  tr{
+    height: 75px;
+    
+  
+  }
+  p{
+    color:rgba(53, 52, 52, 0.527);
+  }
+  
+  img{
+    width: 50px;
+    height: 50px;
+  
+  }
+  
+  /*----------------Lado derecho------------------*/
+  
+  #buscador{
+    position: relative;
+    left: 320px;
+    width: 300px;
+    margin-top: 40px;
+  }
+  #actualizar{
+    position: relative;
+    left: 320px;
+    
+  }
+  #pausarpedidos{
+    position: relative;
+    left: 320px;
+    
+  }
+  

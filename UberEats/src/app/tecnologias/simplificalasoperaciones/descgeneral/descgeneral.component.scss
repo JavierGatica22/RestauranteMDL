@@ -1,0 +1,118 @@
+*{
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.imgp{
+    width: 100%;
+    height: 550px;
+  }
+  
+  .texto-encima{
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .texto-encima2{
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .texto-encima3{
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .dnone{
+    text-decoration: none;
+    color: white;
+    
+  }
+  
+  .b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  @media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  }
+  
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  
+  .featurette-divider {
+     margin: 5rem 0; 
+  } 
+  .featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+  }
+  
+  @media (min-width: 40em) {
+  .carousel-caption p {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  }
+  .featurette-heading {
+  font-size: 50px;
+  }
+  }
+  
+  @media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+  }
+
+  .btnesg{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+.btnesg svg{
+    width: 40px;
+    height: 80px;
+    margin-top: -2%;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 36px;
+    text-align: start
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+}
+  
+  
+  

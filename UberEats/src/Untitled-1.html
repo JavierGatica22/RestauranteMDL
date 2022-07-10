@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Untitled-2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    
+</head>
+<body class="mifondo" >
+    
+  
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox used as click reciever¬.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans acting as the hamburger icon.
+        These will be animated into a cross when clicked.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        The menu itself.
+        -->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contacts</li></a>
+          <a href="#"><li>Show me more</li></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <div class="underbar"></div>
+        </ul>
+
+        
+      </div>
+      
+    </nav>
+
+   
+
+  <div class="containeri fondo">
+    <div>
+      <p class="hform"><b>Un mundo de clientes a tu alcance</b></p>
+    </div>
+    <div class="formulario">
+      <h3 style="color: black;">Comenzar</h3>
+      <input class="forma" type="text" name="nombre del negocio" id="nombre" placeholder="Nombre del negocio">
+      <input class="forma" type="text" name="nombre del negocio" id="nombre" placeholder="Dirección del negocio">
+      <input class="forma" type="text" name="nombre del negocio" id="nombre" placeholder="Piso/Oficina (opcional)">
+      <input class="formad" type="text" name="nombre del negocio" id="nombre" placeholder="Nombre">
+      <input class="formad" type="text" name="nombre del negocio" id="nombre" placeholder="Apellido">
+      <input class="forma" type="email" name="nombre del negocio" id="nombre" placeholder="Correo electrónico">
+      <input class="forma" type="text" name="nombre del negocio" id="nombre" placeholder="Tipo de empresa">
+      <p style="font-size: 13px;">Al hacer clic en Enviar, aceptas los <u>Términos y condiciones generales de Ya Voy</u> y reconoces que leíste la <u>Política de privacidad</u>.</p>
+      <input class="boton" type="submit" value="Enviar">
+    </div>
+  </div>
+
+  <div class="dos">
+    <h1 style="text-align: center;">¿Por qué elegir la app de Ya Voy?</h1>
+  </div>
+  <!-------------Card inicio------------------>
+  <div class="team-boxed">
+    <div class="container">
+    
+      <div class="row people">
+        <!-------------Card 1------------------>
+        <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <h4 class="card-title"><b>Entrega a tu manera</b></h4>
+              <p class="card-text">Nuestras ofertas son flexibles, por lo que puede personalizarlas según sus necesidades. Comience con sus repartidores o conéctese con repartidores a través de la plataforma Ya Voy</p>
+            </div>
+        </div>
+    
+        <!-------------Card 2------------------>
+        <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <h4 class="card-title"><b>Aumenta tu visibilidad</b></h4>
+              <p class="card-text">Destaca con el marketing en la aplicación para llegar a más clientes y aumentar las ventas</p> 
+            </div>
+        </div>
+    
+        <!-------------Card 3------------------>
+        <div class="col-md-6 col-lg-4 item">
+            <div class="box">
+              <h4 class="card-title"><b> Comunícate con los clientes</b></h4>
+              <p class="card-text">Convierta a los clientes en habituales con información de datos procesables, responda a reseñas u ofrezca un programa de fidelización</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-------------Carrusel------------------>
+  <div class="parrafo cuatro">
+    <div class="slide slide-inner" style="width:45%; height: 80%;">
+      <input class="slide-open" type="radio" id="slide-1" 
+            name="slide" aria-hidden="true" hidden="" checked="checked">
+      <div class="slide-item">
+          <img src="images/Carrusel/1.jpg"
+          class="principal">>
+      </div>
+      <input class="slide-open" type="radio" id="slide-2" 
+            name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+          <img src="images/Carrusel/2.jpg"
+          class="principal">
+      </div>
+      <input class="slide-open" type="radio" id="slide-3" 
+            name="slide" aria-hidden="true" hidden="">
+      <div class="slide-item">
+          <img src="images/Carrusel/3.jpg"
+          class="principal">
+      </div>
+      <label for="slide-3" class="slide-control prev control-1">‹</label>
+      <label for="slide-2" class="slide-control next control-1">›</label>
+      <label for="slide-1" class="slide-control prev control-2">‹</label>
+      <label for="slide-3" class="slide-control next control-2">›</label>
+      <label for="slide-2" class="slide-control prev control-3">‹</label>
+      <label for="slide-1" class="slide-control next control-3">›</label>
+      <ol class="slide-indicador">
+          <li>
+              <label for="slide-1" class="slide-circulo">•</label>
+          </li>
+          <li>
+              <label for="slide-2" class="slide-circulo">•</label>
+          </li>
+          <li>
+              <label for="slide-3" class="slide-circulo">•</label>
+          </li>
+      </ol>
+    </div>
+    <h1><b>Desbloquear nuevo crecimiento</b></h1>
+    <p>Miles de usuarios de la aplicación Ya Voy pueden estar buscando comida en su área. Al asociarnos con Ya Voy y agregar su restaurante a la plataforma, podemos ayudarlo a llegar a esos usuarios</p>
+  </div>
+  <br>
+
+  <!----------------------------------->
+  <div class="tres">
+    <h1 style="text-align: center;">Cómo funciona la app de #YaVoy para los restaurantes socios</h1>
+  </div>
+  <!------------Card------------------->
+  <div class="team-boxed2">
+  <div class="container">
+
+    <div class="row people">
+      <!-------------Card 1------------------>
+      <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img src="images/DeliveryPeopleArrive.svg">
+            <h2 class="card-title">Llegada de los socios de la App</h2>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              
+          </div>
+      </div>
+
+      <!-------------Card 2------------------>
+      <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img class="" src="images/CustomersOrder.svg">
+            <h2 class="card-title">Los clientes hacen un pedido</h2>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              
+          </div>
+      </div>
+
+      <!-------------Card 3------------------>
+      <div class="col-md-6 col-lg-4 item">
+          <div class="box"><img class="" src="images/YouPrepare.svg">
+            <h2 class="card-title">Tú lo preparas</h2>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content.</p>
+          <br>
+          
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<!------------------------->
+
+
+<!---------------------------->
+<footer>
+  <div class="containerf" >
+      <div class="rowf">
+          <div class="logo">
+              <h1><i style="font-size: 45px !important;font-weight: 100%;font-style: normal !important; padding-left: 15%;"></i>#YaVoy</h1>
+          </div>
+          <div class="links">
+              <ul style="list-style-type: none;">
+                  <li style="font-weight: bold;">About Ya Voy</li>
+                  <li>Read our Blogs</li>
+                  <li>Buy Gift Cards</li>
+                  <li>Create a business account</li>
+                  <li>Add your restaurant</li>
+                  <li>Sign Up to Deliver</li>
+              </ul>
+          </div>
+          <div class="links">
+              <ul style="list-style-type: none;">
+                  <li style="font-weight: bold;">Get Help</li>
+                  <li>Read FAQs</li>
+                  <li>View all Cities</li>
+                  <li>View all Countries</li>
+                  <li>Restaurants near me</li>
+                  <li><span class="fa fa-language"></span> Español</li>
+              </ul>
+          </div>
+      </div>
+      <div style="padding: 20px 0px; padding-left: 5%;">
+          <span style="margin-right: 20px;" class="fa fa-lg fa-facebook"></span>
+          <span style="margin-right: 20px;" class="fa fa-lg fa-twitter"></span>
+          <span style="margin-right: 20px;" class="fa fa-lg fa-instagram"></span>
+          <span style="float: right;">© 2020 Ya Voy Technologies Inc.</span>
+      </div>
+  </div>
+</footer>
+</html>

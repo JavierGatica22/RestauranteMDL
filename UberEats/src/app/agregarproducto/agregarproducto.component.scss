@@ -1,0 +1,101 @@
+*{
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.separacion{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+}
+
+section{
+    margin: 30px 10px;
+}
+
+.nombre h1{
+    color: black;
+    margin-top: 20px;
+}
+
+.nombre button{
+    background: var(--naranjo);
+    border: 0;
+    padding: 10px;
+    gap: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre button svg{
+    fill: #fff;
+}
+
+.nombre button p{
+    margin: 0;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 60px;
+    width: 90%;
+}
+
+.casilla{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: black;
+    margin-bottom: 5px;
+}
+
+input, select{
+    height: 35px;
+    padding: 5px;
+    background: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 0;
+}
+
+.imagen{
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.enviar{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.enviar button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 0 10px;
+    background: var(--naranjo);
+    border: 0;
+    color: white;
+}
+
+.enviar button p{
+    margin: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 90%;
+    }
+}

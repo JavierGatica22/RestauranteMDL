@@ -1,0 +1,86 @@
+<app-sidebar></app-sidebar>
+<div class="row w-100 mt-4">
+  <div class="content">
+    <section>
+      <div class="container">
+        <div class="row">
+          <!-------------------Lado izquierdo----------------------------------->
+          <div class="col-lg-6">
+            <h2 id="tituloTiendas" class="mb-4">Tiendas</h2>
+            <select id="inputState" class="form-select ">
+              <option>Ordena</option>
+              <option>A-Z </option>
+              <option>...</option>
+            </select>
+            <h5 id="tituloConectados" class="mb-4">Conectado (1)</h5>
+          </div>
+          <!-------------------Lado derecho----------------------------------->
+          <div class="col-lg-6 ">
+
+            <input id="buscador" class="form-control w-60  mb-4 " type="search" placeholder="Buscar"
+              aria-label="Search">
+
+            <div class="col-12">
+              <button id="actualizar" type="button" class="btn btn-light btnd mb-4 "> <b>Actualizar</b></button>
+
+            </div>
+            <button id="pausarpedidos" type="button" class="btn btn-light btnd mb-4 "><b>Pausar pedidos</b></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------Tabla----------------------------------->
+    <section>
+      <div class="container">
+        <table class="table table-hover table-resposive ">
+
+          <tbody>
+            <tr>
+              <td><img src="assets/restaurant.png" alt=""></td>
+              <td>
+                <strong>Mr Bolat</strong>
+                <p>Av. Jorge pedro Alessandri</p>
+              </td>
+
+              <td><button type="button" class="btn btn-light btnd mb-4">4.5</button></td>
+              <td>
+                <strong>Aceptando pedidos</strong>
+                <p>Abierto desde 11:00</p>
+              </td>
+              <td>
+                <strong>CL $598.000</strong>
+                <p>Ventas</p>
+              </td>
+              <td>
+                <strong>1</strong>
+                <p>Pedidos</p>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/restaurant.png" alt=""></td>
+              <td>
+                <strong>Mr Bolat</strong>
+                <p>Av. Jorge pedro Alessandri</p>
+              </td>
+
+              <td><button type="button" class="btn btn-light btnd mb-4">4.5</button></td>
+              <td>
+                <strong>Aceptando pedidos</strong>
+                <p>Abierto desde 11:00</p>
+              </td>
+              <td>
+                <strong>CL $598.000</strong>
+                <p>Ventas</p>
+              </td>
+              <td>
+                <strong>1</strong>
+                <p>Pedidos</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>

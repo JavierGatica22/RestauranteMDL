@@ -1,0 +1,29 @@
+.btnesg{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 5vh;
+}
+
+.btnesg svg{
+    width: 40px;
+    height: 80px;
+    margin-top: -2%;
+}
+
+.btnesg span{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 36px;
+    text-align: start
+}
+
+.btnesg:hover{
+    color: rgba(61, 61, 61, 0.644);
+    border-color: rgba(61, 61, 61, 0.644);
+}
+  

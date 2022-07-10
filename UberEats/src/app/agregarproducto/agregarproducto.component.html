@@ -1,0 +1,61 @@
+<div class="separacion">
+  <div>
+    <section class="nombre">
+      <button routerLink="/menu" class="btn btn-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path>
+        </svg>
+        <p>volver atrás</p>
+      </button>
+      <h1>Agregar Producto</h1>
+    </section>
+    <section>
+      <div class="formulario">
+        <div class="casilla">
+          <label for="nombre">Nombre producto</label>
+          <input id="nombre" type="text" [(ngModel)]="ProductoNuevo.Nom_prod">
+        </div>
+        <div class="casilla">
+          <label for="precio">Precio</label>
+          <input id="precio" type="number" [(ngModel)]="ProductoNuevo.Precio">
+        </div>
+        <div class="casilla">
+          <label for="inputState">Categoria</label>
+          <select id="inputState" [(ngModel)]="ProductoNuevo.Categoria">
+            <option>Comida Rapida</option>
+            <option>Bebidas</option>
+            <option>Snacks</option>
+            <option>Ensaladas</option>
+            <option>Gourmet</option>
+            <option>Alcohol </option>
+            <option>Veggie</option>
+          </select>
+        </div>
+        <div class="casilla">
+          <label for="stock">Stock</label>
+          <input id="stock" type="number" [(ngModel)]="ProductoNuevo.Stock">
+        </div>
+        <div class="casilla">
+          <label for="categoria">Id restaurante</label>
+          <input type="number" [(ngModel)]="ProductoNuevo.Restaurante_idRestaurante">
+        </div>
+        <div class="casilla">
+          <label for="imagen">Imagen</label>
+          <input id="imagen" type="file" class="imagen" [(ngModel)]="ProductoNuevo.Imagen">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="enviar">
+        <button (click)="AgregarProducto()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send"
+            viewBox="0 0 16 16">
+            <path
+              d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+          </svg>
+          <p >Agregar producto</p>
+        </button>
+      </div>
+    </section>
+  </div>
+</div>
