@@ -1,84 +1,99 @@
-.container-fluid{
-  padding-left: 0%;
+*{
+  --naranjo: rgb(231, 106, 4);
+  --naranjod: rgba(231, 106, 4, 0.651);
 }
 
-.menu a{
-  text-decoration: none;
+.separacion{
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
-.content{
-  overflow-y: auto;
-  height: 100vh;
-  padding-bottom: 5rem;
+.pagina{
+  padding: 0 20px;
 }
 
-#titulo{
-    margin-top: 20px;
-    border-bottom: 1px solid rgb(235, 231, 231);
+section{
+  margin: 30px 0;
 }
 
-#bajada, p{
-    margin-top: 20px;
-    color: rgb(97, 94, 94);
+.header h1{
+  color: black;
+  margin-bottom: 30px;
 }
 
-.cuadrado{
-  border: 1px solid  rgb(235, 232, 232);
+.hora{
   width: 100%;
-  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
 }
 
-#calendario{
-  height: 60px;
-  position: relative;
-  left: 10px;
-  margin-top: 50px;
-  background-color: rgba(168, 168, 168, 0.349);
-  border-radius: 5%;
-  border:1px solid  rgb(235, 232, 232);
-  font-weight: bold;
-  width: 250px;
+.hora p{
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 500;
 }
 
-#check{
-  position: relative;
-  margin-left: 50px;
-  border: 1px solid black;   
+.check{
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
 }
 
-#abierto{
-width: 160px;
-display: inline;
-border-radius: 5%;
-background-color: rgba(168, 168, 168, 0.349);
-height: 60px;
-font-weight: bold; 
+.check p{
+  margin: 0;
 }
 
-#cerrado{
-font-weight: bold;
-  width: 160px;
-  display: inline;
-  margin-left: 20px;
-  margin-top: 50px;
-  border-radius: 5%;
-  height: 60px;
-  background-color: rgba(168, 168, 168, 0.349);
+input{
+  padding: 10px 15px;
+  background: #ddd;
+  border: 0;
+  outline: 0;
 }
 
-#agregarmas{
-margin-top: 30px;
-color:rgb(9, 182, 9);
-font-weight: bold;
+.agregar p{
+  width: max-content;
+  margin: 0;
+  color: green;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-#botonguardar{
-margin-top: 20px;
-height: 50px;
-width: 100px;
-border-radius: 5%;
+.guardar{
+  background: var(--naranjo);
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 10px 15px;
 }
 
+@media screen and (max-width: 1000px){
+  .pagina{
+      padding: 0 15px;
+  }
 
+  .hora{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 10px;
+  }
+}
 
+@media screen and (max-width: 700px){
+  .pagina{
+      padding: 0 10px;
+  }
 
+  .hora{
+      grid-template-columns: 1fr;
+  }
+
+  .hora .check{
+      margin: 0;
+  }
+}

@@ -1,35 +1,162 @@
+*{
+  --naranjo: rgb(231, 106, 4);
+  --naranjod: rgba(231, 106, 4, 0.651);
+}
 
-.input1{
-    border-radius: 10vh;
-    background-color: rgba(105, 105, 105, 0.314);
-    border: none;
-    height: 40px;
-    width: 14%;
-    text-align: center;
+.separacion{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.pagina{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+section{
+  margin: 30px 10px;
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header .texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header h1{
+  color: black;
+}
+
+.header .ubicacion{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+
+.date input{
+  background: #ccc;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.cartas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 10px;
+}
+
+.carta svg{
+  width: 100%;
+  height: 100%;
+}
+
+.carta .arriba{
+  display: grid;
+  height: 95px;
+  grid-template-columns: 1fr 2fr;
+  border: 1px solid gray;
+  padding: 10px 0 20px 10px
+}
+
+.carta .texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: start;
+  padding: 0 10px;
+}
+
+.carta .texto h2{
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.carta .texto p{
+  margin-bottom: 0;
+}
+
+.carta .abajo{
+  background: #ddd;
+  display: flex;
+  height: 60px;
+  align-items: flex-end;
+  border: 1px solid gray;
+  border-top: 0;
+}
+
+.carta .abajo p{
+  padding-left: 25px;
+  display: flex;
+  justify-content: start;
+}
+
+.imagenventas{
+  width: 100%;
+}
+
+.imagenventas img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  section{
+      margin: 20px 15px;
+  }
+
+  .cartas{
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .pagina{
+      padding: 0 5px;
   }
   
-  .card {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px -4px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(37, 36, 34);
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 12px;
-    border-width: 0px;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1) 0s, box-shadow 0.2s ease 0s;
+  section{
+      margin: 15px 5px;
   }
-  
-  .card-stats .card-footer {
-    padding: 0px 15px 15px;
+
+  .header{
+      display: flex;
+      flex-direction: column;
   }
-  
-  .card .card-footer {
-    background-color: transparent;
-    border-width: 0px;
-    border-style: initial;
-    border-color: initial;
-    border-image: initial;
+
+  .header .imagenrestaurante{
+      width: 100%;
+      display: flex;
+      justify-content: center;
   }
+
+  .header .texto h1{
+      margin-bottom: 15px;
+  }
+
+  .cartas{
+      grid-template-columns: 1fr;
+  }
+
+  .carta .arriba{
+      height: 100px;
+  }
+
+  .carta .arriba h2{
+      font-size: 1.4rem;
+  }
+
+  .carta .arriba p{
+      font-size: 1rem;
+  }
+
+  .carta .abajo{
+      padding-left: 15px;
+  }
+}

@@ -1,0 +1,81 @@
+*{
+    --naranjo: rgb(231, 106, 4);
+    --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.separacion{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.pagina{
+    padding: 0 20px;
+}
+
+section{
+    margin: 30px 0;
+}
+
+.header h1{
+    color: black;
+}
+
+.carrusel{
+    width: 70%;
+}
+
+.carta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 70%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.carta h3{
+    color: black;
+}
+
+.carta p{
+    margin-top: 10px;
+    color: rgb(105, 105, 105);
+}
+
+.carta button{
+    padding: 10px;
+    border: 0;
+    background: #ddd;
+    color: black;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1000px){
+    .pagina{
+        padding: 0 15px;
+    }
+
+    .carrusel{
+        width: 80%;
+    }
+
+    .carta{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .pagina{
+        padding: 0 10px;
+    }
+
+    .carrusel{
+        width: 100%;
+    }
+
+    .carta{
+        width: 100%;
+    }
+}

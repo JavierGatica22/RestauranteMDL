@@ -1,94 +1,124 @@
-.container-fluid{
-    padding-left: 0%;
+* {
+  --naranjo: rgb(231, 106, 4);
+  --naranjod: rgba(231, 106, 4, 0.651);
+}
+
+.separacion {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.pagina{
+  padding: 0 20px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1{
+  color: black;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pedidos h2{
+  color: black;
+  font-size: 1.6rem;
+}
+
+input, select{
+  width: min-content;
+  height: min-content;
+}
+
+input{
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+}
+
+button, select{
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #ccc;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pedidos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+table{
+  width: 100%;
+}
+
+table img{
+  width: 80px;
+}
+
+table p{
+  margin: 0;
+}
+
+tr{
+  border-bottom: 1px solid #ccc;
+}
+
+td .puntuacion{
+  background: #ddd;
+  color: black;
+  font-weight: 500;
+  padding: 15px;
+  width: min-content;
+  border-radius: 30%;
+}
+
+td .arriba{
+  color: black;
+  font-weight: 500;
+}
+
+td .abajo{
+  color: gray;
+}
+
+@media screen and (max-width: 1000px){
+  .pagina{
+      padding: 0 15px;
   }
-  
-  .sidebar-container{
-    min-height: 100vh;
+
+  table tr{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
   }
-  
-  .sidebar-container .menu{
-    width: 14rem;
+
+  td{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
-  
-  .menu a{
-    text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+  .pagina{
+      padding: 0 10px;
   }
-  
-  .content{
-    overflow-y: auto;
-    height: 100vh;
-    padding-bottom: 5rem;
-  }
-  
-  .btnd{
-    background-color: rgba(168, 168, 168, 0.349);
-    border-radius: 50px;
-  }
-        
-  
-  
-  /*----------------Lado Izquierdo------------------*/
-  
-  /*Titulo tiendas*/
-  #tituloTiendas{
-    font-size: 60px;
-    margin-top: 40px;
-    
-  
-  }
-  /*Boton Ordena*/
-  
-  #inputState{
-    border-radius: 50px;
-    background-color: rgba(168, 168, 168, 0.349);
-    width: 120px;
-    margin-top: 45px;
-    
-  }
-  
-  /*Titulo Conectados*/
-  
-  #tituloConectados{
-    
-    margin-top: 80px;
-    font-size:30px ;
-    
-    
-  }
-  
-  /*Tabla*/
-  
-  tr{
-    height: 75px;
-    
-  
-  }
-  p{
-    color:rgba(53, 52, 52, 0.527);
-  }
-  
-  img{
-    width: 50px;
-    height: 50px;
-  
-  }
-  
-  /*----------------Lado derecho------------------*/
-  
-  #buscador{
-    position: relative;
-    left: 320px;
-    width: 300px;
-    margin-top: 40px;
-  }
-  #actualizar{
-    position: relative;
-    left: 320px;
-    
-  }
-  #pausarpedidos{
-    position: relative;
-    left: 320px;
-    
-  }
-  
+}

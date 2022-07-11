@@ -44,6 +44,10 @@ import { MenuComponent } from './menu/menu.component';
 import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { TopyavoysbComponent } from './topyavoysb/topyavoysb.component';
+import { PagossbComponent } from './pagossb/pagossb.component';
+import { MarketingsbComponent } from './marketingsb/marketingsb.component';
+import { TiempopreparacionsbComponent } from './tiempopreparacionsb/tiempopreparacionsb.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +91,11 @@ import { UsuarioComponent } from './usuario/usuario.component';
     MenuComponent,
     AgregarproductoComponent,
     SidebarComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    TopyavoysbComponent,
+    PagossbComponent,
+    MarketingsbComponent,
+    TiempopreparacionsbComponent
   ],
   imports: [
     BrowserModule,

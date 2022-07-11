@@ -1,54 +1,35 @@
-<app-sidebar></app-sidebar>
-    <div class="container-fluid">
-        <div class="d-flex">
-           <div class="row w-100 mt-4">
-            <div class="content">
-              <section>
-                <div class="container">
-                  <div id="titulo" class="row">
-                    <h1> <strong> Horario durante las fiestas </strong></h1>
-                  </div>
-                  <div id="bajada" class="row">
-                    <p>Agrega una fecha e indica si el restaurante estará cerrado todo el día.Si estará abierto puedes acortar el horario de atención.Para permanecer abierto mas tiempo ese día, edita el horario regular del menú.</p>
-                  </div>
-                  <div class=" row cuadrado">
-                      <div class="col-lg-6">
-                        
-                        <input type="date" id="calendario">
-                        <input type="checkbox" id="check"> <strong> Cerrado todo el dia</strong>
-                        
-                      </div>
-                     
-                      <div class="col-lg-6">
-                        
-                      <select id="abierto"  class="form-select ">
-                        
-                        <option>11:15 A.M  </option>
-                        <option>13:15 P.M </option>
-                        <option>...</option>
-                      </select>
-                      
-                      <select id="cerrado" class="form-select ">
-                        <option>14:00 P.M  </option>
-                        <option>13:15 P.M </option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <p id="agregarmas">+ Agregar mas</p>
-
-                  <button id="botonguardar" type="button" class="btn btn-dark" >Guardar</button>
-                </div>
-                
-                
-              </section>
-              
-    
-             
-            </div>
+<div class="separacion">
+  <app-sidebar></app-sidebar>
+  <div class="pagina">
+      <section class="header">
+          <h1>Horario durante las fiestas</h1>
+      </section>
+      <section>
+          <p>Agrega una fecha e indica si el restaurante estará cerrado todo el día. Si estará abierto, puedes acortar el horario de atención. Para permanecer abierto más tiempo ese día, edita el horario regular del menú.</p>
+          <div class="hora">
+              <div class="caja">
+                  <p>Fecha</p>
+                  <input type="date">
+              </div>
+              <div class="caja check">
+                  <input type="checkbox">
+                  <p>Cerrado todo el día</p>
+              </div>
+              <div class="caja horaa">
+                  <p>Horario de apertura</p>
+                  <input type="time">
+              </div>
+              <div class="caja horac">
+                  <p>Hora de cierre</p>
+                  <input type="time">
+              </div>
           </div>
-        </div>
-      </div>
- 
-    
+      </section>
+      <section class="agregar">
+          <p>+ Agregar más</p>
+      </section>
+      <section>
+          <button type="button" class="guardar">Guardar</button>
+      </section>
+  </div>
+</div>

@@ -39,6 +39,10 @@ import { TecnologiaComponent } from './tecnologias/tecnologia/tecnologia.compone
 import { AgregarproductoComponent } from './agregarproducto/agregarproducto.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { UsuarioComponent } from './usuario/usuario.component';
+import { TopyavoysbComponent } from './topyavoysb/topyavoysb.component';
+import { PagossbComponent } from './pagossb/pagossb.component';
+import { MarketingsbComponent } from './marketingsb/marketingsb.component';
+import { TiempopreparacionsbComponent } from './tiempopreparacionsb/tiempopreparacionsb.component';
 
 const routes: Routes = [
   {
@@ -201,6 +205,23 @@ const routes: Routes = [
   {
     path:'usuario',
     component:UsuarioComponent
+  },
+  {
+    path:'topyavoysb',
+    component:TopyavoysbComponent
+  },
+  {
+    path:'pagossb',
+    component:PagossbComponent
+  },
+  {
+    path:'marketingsb',
+    component:MarketingsbComponent
+  },
+  {
+    path:'tiempopreparacionsb',
+    component:TiempopreparacionsbComponent
+
   }
 ];
 

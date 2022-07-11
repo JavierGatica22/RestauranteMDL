@@ -209,138 +209,193 @@
     }
 }
 
-
 /*-----------footer-----------*/
-.pf{
-    padding-top: 25vh;
+footer{
+    background: black;
+    padding: 115px 155px 60px;
 }
 
-.footer a{
+footer section{
+    padding: 28px 0;
+}
+
+footer .columnas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0 40px;
+    color: #fff;
+}
+
+.columnas h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.columnas a{
+    display: block;
+    font-size: 14px;
+    color: #fff;
     text-decoration: none;
-    color: white;
+    margin-bottom: 10px;
 }
 
-.footer li{
-    margin-bottom: 2vh;
+.columnas a:hover{
+    color: #AFAFAF;
 }
 
-.ff a:hover{
-    color: gray;
+.redes-sociales{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1px 1fr;
+    gap: 0 40px;
 }
 
-.footer h5{
-    color: white;
+.redes-sociales .rrss{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0 5px;
 }
-svg{
-    color: white;
-}
-
-.boton-rrss{
-    width: 45px;
-    height: 45px;
-    background-color: black;
-    border-radius: 0;
+.redes-sociales .rrss svg{
+    width: 40px;
+    padding: 13px;
+    color: #fff;
 }
 
-.boton-rrss:hover{
-    background-color: rgba(65, 65, 65, 0.801);
+.rrss svg:hover{
+    background: #333333;
 }
 
-.facebook{
-    margin: 0 0 4vw 0;
-}
-
-.correr{
-    margin: 0 0 4vw 2vh;
-}
-
-.enlaces{
+.redes-sociales .mas{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
-.idioma{
-    color: white;
-    width: 210px;
-    margin-bottom: 6vh;
-
-    svg{
-        margin-bottom: 5px;
-    }
+.redes-sociales .mas svg{
+    min-width: 16px
 }
 
-.ubicacion{
-    color: white;
-    width: 110px;
-    margin-bottom: 6vh;
-    margin-left: 1vw;
-
-    svg{
-        margin-bottom: 5px;
-        margin-right: 1px;
-    }
-}
-
-.descargar{
+.redes-sociales .mas .bloque{
     display: flex;
-    flex-wrap: nowrap;
-}
-
-.googleplay{
-    height: 50%;
-}
-
-.appstore{
-    height: 50%;
-}
-
-.descargar img{
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
     height: 100%;
-    object-fit: scale-down;
+    padding: 0 10px;
 }
 
-.appstore{
-    margin-left: 2vw;
+.mas .bloque:hover{
+    background: #333333;
+}
+
+.bloque svg{
+    color: #fff;
+    margin-right: 8px;
+}
+
+.bloque p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mas a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes-sociales .descargas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.descargas img{
+    width: 120px
 }
 
 .copyright{
-    font-size: 13px;
-    text-align: start;
-    color: rgb(151, 151, 151);
-    margin: 0 0 6vh 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.mas-opciones{
-    font-size: 13px;
-    color: rgb(151, 151, 151);
-    text-align: center;
-    margin: 2vh 0;
+.copyright .terminos{
+    display: flex;
+    flex-direction: row;
+    gap: 0 25px;
 }
 
-.mas-opciones a{
-    color: rgb(151, 151, 151);
+.copyright p{
+    font-size: 12px;
+    color: #AFAFAF;
+}
+
+.copyright a{
+    font-size: 12px;
     text-decoration: none;
+    color: #AFAFAF;
 }
 
-.mas-opciones a:hover{
-    color: rgba(66, 66, 66, 0.678);
+.copyright a:hover{
+    color: #545454;
 }
 
-.opciones-correr{
-    margin: 0 0 0 50px;
-}
 
-@media screen and (max-width: 1000px){
-    .dd-recursos{
-        width: 100%;
-        margin: 0;
-        border: 0;
-        border-radius: 0;
-        border-bottom: 2px solid var(--naranjo);
+@media screen and (max-width: 1136px){
+    footer{
+        padding: 115px 30px 50px;
     }
-    
-    .dropdown-recursos{
-        padding: 0 4vw;
+
+    footer .columnas{
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 60px;
+    }
+
+    .redes-sociales{
+        grid-template-columns: 1fr;
+        gap: 25px 0;
+    }
+
+    .redes-sociales .rrss{
+        width: min-content;
+        gap: 0 20px;
+    }
+
+    .redes-sociales .mas{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .redes-sociales .mas .bloque{
+        height: 35px;
+    }
+
+    .redes-sociales .rrss svg{
+        width: 40px;
+    }
+
+    .descargas img{
+        width: 160px;
+    }
+
+    .copyright{
+        flex-direction: column;
+        align-items: start;
+        gap: 18px 0;
+    }
+
+    .copyright .terminos{
+        gap: 0 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    footer .columnas{
+        grid-template-columns: 1fr;
     }
 }

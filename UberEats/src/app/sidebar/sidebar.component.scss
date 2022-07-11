@@ -37,12 +37,21 @@
 
 .nombre p{
     margin: 0;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .link:hover{
     background: var(--naranjo);
     padding-left: 25px;
+}
+
+.cerrar-sesion{
+    background: rgb(189, 0, 0);
+}
+
+.cerrar-sesion:hover{
+    background: red;
 }
 
 @media screen and (max-width: 1000px) {
@@ -69,7 +78,7 @@
 
     .nombre p{
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -86,6 +95,6 @@
     }
 
     .nombre p{
-        font-size: 10px;
+        font-size: 12px;
     }
 }
